@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,500;0,600;0,700;1,800&display=swap");
+
+:root {
+  --ultramarine-blue: #525ee0;
+  --space-cadet-2: #231f41;
+  --pumpkin: #f76d02;
+  --gray: #6f6b80;
+}
+
+/* #REST style  */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+a,
+img,
+span,
+input,
+button {
+  display: block;
+}
+
+img {
+  height: auto;
+}
+
+input,
+button {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+input {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+body {
+  font-family: "Urbanist", sans-serif !important;
+  background-color: #fff;
+  color: var(--gray);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* #REUSED STYLE  */
+.section {
+  padding-block: 80px;
+}
+
+.section-subtitle {
+  font-weight: 800;
+  font-size: 16px;
+  color: var(--ultramarine-blue);
+  text-transform: uppercase;
+  line-height: 26px;
+}
+
+.hero-title {
+  font-weight: 800;
+  font-size: 68px;
+  color: var(--space-cadet-2);
+  text-transform: capitalize;
+  line-height: 88px;
+}
+
+.section-title {
+  font-weight: 800;
+  font-size: 40px;
+  color: var(--space-cadet-2);
+  text-transform: capitalize;
+  line-height: 52px;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* #HEADER  */
+header {
+  background-image: url(../img/hero-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.logo {
+  font-weight: 800;
+  font-size: 24px;
+  color: var(--ultramarine-blue);
+}
+
+.navbar .nav-link {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.navbar .nav-item:is(:hover, :focus) .nav-link {
+  color: var(--ultramarine-blue);
+}
+
+.navbar button {
+  padding: 10px 30px;
+  background-color: var(--ultramarine-blue);
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.navbar button:is(:hover, :focus-within) {
+  background-color: #231f41;
+}
+
+.navbar .bx-search {
+  padding: 12px;
+}
+
+.searchbar {
+  margin-bottom: auto;
+  margin-top: auto;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 30px;
+  padding: 0 14px;
+  position: relative;
+}
+
+.search_input {
+  color: var(--ultramarine-blue);
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  caret-color: transparent;
+  line-height: 40px;
+  transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_input {
+  padding: 0 10px;
+  width: 350px;
+  border: 0.5px solid;
+  border-radius: 100px;
+  border-color: var(--ultramarine-blue);
+  caret-color: var(--ultramarine-blue);
+  transition: width 0.4s linear;
+}
+
+.searchbar:hover > .bx-search {
+  background: var(--ultramarine-blue);
+  border-color: var(--ultramarine-blue);
+  color: #fff;
+}
+
+.bx-search {
+  float: right;
+  color: var(--ultramarine-blue);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* #HERO  */
+.hero-txt {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--gray);
+}
+
+.hero button {
+  padding: 10px 30px;
+  background-color: var(--ultramarine-blue);
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 29px;
+}
+
+.hero .bx-right-arrow-alt {
+  color: #fff;
+}
+
+.hero button:is(:hover, :focus-within) {
+  background-color: #231f41;
+}
+
+.hero .hero-right {
+  position: relative;
+}
+
+.hero-right .hero-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-right .abs-img-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.hero-right .abs-img-2 {
+  position: absolute;
+  right: 140px;
+  top: -140px;
+}
+
+/* #CATEGORY  */
+.category-card {
+  background-color: #f5f5f5;
+  padding: 30px;
+  border-radius: 6px;
+}
+
+.category-card:is(:hover, :focus-within) {
+  background-color: var(--ultramarine-blue);
+}
+
+.category-card:is(:hover, :focus-within) .bx {
+  background-color: #646ee3;
+  color: #fff;
+}
+
+.category-card:is(:hover, :focus-within) :is(a, .card-meta) {
+  color: #fff !important;
+}
+
+.category-card h5 a {
+  font-weight: 700;
+  font: 20px;
+  line-height: 26px;
+  color: var(--space-cadet-2);
+}
+
+.category-card .card-meta {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--gray);
+}
+
+.category-card .bx {
+  color: var(--ultramarine-blue);
+  background-color: #fff;
+}

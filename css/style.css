@@ -29,7 +29,10 @@ a,
 img,
 span,
 input,
-button { display: block; }
+button,
+ion-icon {
+  display: block;
+}
 
 img {
   height: auto;
@@ -570,7 +573,7 @@ header {
   line-height: 29px;
 }
 
-.event-card .btn-link{
+.event-card .btn-link {
   border-block-end: 2px solid transparent;
   transition: 0.25s ease;
   color: var(--ultramarine-blue);
@@ -579,4 +582,115 @@ header {
 
 .event-card .btn-link:is(:hover, :focus) {
   border-color: var(--ultramarine-blue);
+}
+
+/* #NEWSLETTER  */
+
+.newsletter {
+  background-image: url(../img/newsletter-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.newsletter .section-subtitle {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 0;
+}
+
+.newsletter .section-title {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 52px;
+  margin-block-end: 50px;
+}
+
+.newsletter .input-wrapper {
+  position: relative;
+  max-width: 650px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.input-wrapper input {
+  background: #fff;
+  padding: 20px 40px;
+  border-radius: 6px;
+}
+
+.input-wrapper ion-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+}
+
+.input-wrapper .btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 15px 30px;
+  background-color: var(--ultramarine-blue);
+  color: #fff;
+  font-weight: 70;
+  font-size: 18px;
+  line-height: 29px;
+}
+
+.input-wrapper .btn:is(:hover, :focus-within) {
+  background-color: var(--space-cadet-2);
+  color: #fff;
+}
+
+/* #FOOTER  */
+footer {
+  background: var(--space-cadet-2);
+  background-position: center;
+  height: auto;
+  color: #fff;
+}
+
+footer .logo {
+  color: #fff;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 38px;
+  margin-block-end: 30px;
+}
+
+footer .text {
+  font-weight: 500;
+  font: 16px;
+  line-height: 26px;
+  color: #fff;
+}
+
+footer .social-icons .bx {
+  background-color: #fff;
+  color: var(--ultramarine-blue);
+  padding: 8px;
+  transition: 0.5s ease;
+}
+
+footer .bx:is(:hover, :focus) {
+  background-color: var(--ultramarine-blue);
+  color: #fff;
+}
+
+footer li a {
+  color: #fff;
+}
+
+footer li:is(:hover, :focus-within) :is(a, .bx-chevron-right) {
+  color: var(--ultramarine-blue);
+}
+
+footer .text-md {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 38px;
 }

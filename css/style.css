@@ -29,9 +29,7 @@ a,
 img,
 span,
 input,
-button {
-  display: block;
-}
+button { display: block; }
 
 img {
   height: auto;
@@ -92,6 +90,20 @@ body {
   color: var(--space-cadet-2);
   text-transform: capitalize;
   line-height: 52px;
+}
+
+.topic {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  color: #231f41;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #6f6b80;
 }
 
 .img-cover {
@@ -270,4 +282,301 @@ header {
 .category-card .bx {
   color: var(--ultramarine-blue);
   background-color: #fff;
+}
+
+/* #ABOUT  */
+.about .about-banner {
+  position: relative;
+}
+
+.about-banner .abs-2 {
+  position: absolute;
+  top: 100px;
+  left: -120px;
+  z-index: -1;
+}
+
+.about-banner .abs-1 {
+  position: absolute;
+  top: 170px;
+  right: 70px;
+}
+
+.about .topic {
+  margin-bottom: 5px;
+}
+
+.about .section-title {
+  margin-block-end: 30px;
+}
+
+.about .icon-1 {
+  background-color: #ffa31a1a;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.about .icon-2 {
+  background-color: #edeefc;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.about .icon-3 {
+  background-color: #fff2ee;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.about button {
+  padding: 10px 30px;
+  background-color: var(--ultramarine-blue);
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 29px;
+}
+
+.about .bx-right-arrow-alt {
+  color: #fff;
+}
+
+.about button:is(:hover, :focus-within) {
+  background-color: #231f41;
+}
+
+/* #COURSES  */
+.course {
+  background-image: url(../img/course-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.course .section-content {
+  text-align: center;
+}
+
+.course-card {
+  position: relative;
+}
+.course-card .card-banner {
+  overflow: hidden;
+  /* border-top-style: 50px; */
+}
+
+.course-card .img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+.course-card:is(:hover, :focus-within) .img-cover {
+  transform: scale(1.1);
+}
+
+.course-card .badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #fff;
+  color: var(--ultramarine-blue);
+  padding: 10px;
+}
+
+.course-card .bxs-heart {
+  color: #fff;
+  background-color: #b7b6bd;
+  border-radius: 50%;
+  padding: 10px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.course-card .card-content {
+  padding-inline: 20px;
+  padding-block-end: 20px;
+  color: #6f6b80;
+}
+
+.course-card .card-meta-list {
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  color: #6f6b80;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.course-card span {
+  display: inline;
+}
+
+.course-card .card-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--space-cadet-2);
+}
+
+.course-card .card-title:is(:hover, :focus) {
+  color: var(--ultramarine-blue);
+}
+
+.course-card .rating-wrapper {
+  display: flex;
+  gap: 30px;
+  margin-block: 10px;
+}
+
+.course-card .rating-wrapper span {
+  color: #6f6b80;
+}
+
+.course-card .rating-wrapper .bx {
+  color: #ffa31a;
+}
+
+.course-card .card-price span {
+  color: var(--ultramarine-blue);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.course-card .card-meta-item {
+  display: inline;
+}
+
+.course-card .card-footer {
+  padding-block: 10px;
+}
+
+.course .btn {
+  max-width: fit-content;
+  padding: 10px 30px;
+  background-color: var(--ultramarine-blue);
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 29px;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.course .bx-right-arrow-alt {
+  color: #fff;
+}
+
+.course .btn:is(:hover, :focus-within) {
+  background-color: #231f41;
+  color: #fff;
+}
+
+/* #WORKSHOP  */
+.workshop {
+  background-image: url(../img/cta-bg.png);
+  background-color: var(--ultramarine-blue);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.workshop .btn {
+  max-width: fit-content;
+  padding: 10px 30px;
+  background-color: #fff;
+  color: var(--ultramarine-blue);
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 29px;
+  display: inline-block;
+}
+
+.workshop .bx-right-arrow-alt {
+  color: var(--ultramarine-blue);
+}
+
+.workshop .btn:is(:hover, :focus-within) {
+  background-color: #f76d02;
+  color: #fff;
+}
+
+.workshop img {
+  border-radius: 6px;
+}
+
+/* #EVENT  */
+
+.event-card {
+  position: relative;
+  background: #f5f5f5;
+}
+
+.event-card .badge {
+  position: absolute;
+  background-color: var(--ultramarine-blue);
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 0 50px 50px 0;
+  top: 20px;
+  left: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.event-card .card-content {
+  padding-inline: 20px;
+  padding-block-end: 20px;
+}
+
+.event-card .card-address {
+  display: flex;
+  align-items: center;
+}
+
+.event-card .bx {
+  color: var(--ultramarine-blue);
+}
+
+.event-card .card-address span {
+  color: #6f6b80;
+  margin-block: 20px;
+}
+
+.event-card .card-title a {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--space-cadet-2);
+}
+
+.event-card .card-title:is(:hover, :focus-within) a {
+  color: var(--ultramarine-blue);
+}
+
+.event-card .btn-link span {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 29px;
+}
+
+.event-card .btn-link{
+  border-block-end: 2px solid transparent;
+  transition: 0.25s ease;
+  color: var(--ultramarine-blue);
+  max-width: max-content;
+}
+
+.event-card .btn-link:is(:hover, :focus) {
+  border-color: var(--ultramarine-blue);
 }
